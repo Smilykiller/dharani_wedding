@@ -25,7 +25,7 @@ export default function RomanticFooter() {
           WITH THE WARMEST BLESSINGS OF
         </p>
         <p className="font-serif text-3xl sm:text-4xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#2b111c] via-[#6e223c] to-[#2b111c] tracking-tight">
-          Vengat &amp; Tharani
+          Vengat <span className="font-sans px-1">♥</span> Tharani
         </p>
         <div className="w-20 h-[1.5px] bg-gradient-to-r from-transparent via-[#c5a059] to-transparent mx-auto my-3 opacity-80" />
         <p className="font-cinzel text-xs font-bold text-[#5c4018] tracking-[0.25em] uppercase">

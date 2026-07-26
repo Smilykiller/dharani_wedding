@@ -41,7 +41,7 @@ export default function OurStory() {
             WITH DIVINE BLESSINGS &amp; LOVE
           </p>
           <p className="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#2b111c] via-[#6e223c] to-[#2b111c] font-normal italic tracking-wide">
-            Vengat &amp; Tharani
+            Vengat <span className="font-sans px-1">♥</span> Tharani
           </p>
           <span className="font-cinzel text-[10px] text-[#8a6628] tracking-[0.2em] uppercase mt-1.5">
             &amp; Both Our Beloved Families

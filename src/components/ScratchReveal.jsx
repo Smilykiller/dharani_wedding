@@ -154,7 +154,7 @@ export default function ScratchReveal({ onExplore }) {
             Engagement: August 30, 2026
           </p>
           <p className="font-sans text-[10px] font-semibold text-[#5c4018] tracking-widest uppercase mt-1">
-            Lakshmi Mahal • Madurai
+            Lakshmi Mahal • Thiruparankundram • Madurai
           </p>
         </div>
 
