@@ -33,9 +33,44 @@ export default function RomanticFooter() {
         </p>
       </motion.div>
 
-      <p className="font-sans text-[11px] text-[#735322] font-medium tracking-wider uppercase">
-        © 2026 • DESIGNED WITH ETERNAL LOVE &amp; DEVOTION
-      </p>
+      <div className="flex flex-col items-center gap-3 mt-4 w-full">
+        <p className="font-sans text-[11px] text-[#735322] font-medium tracking-wider uppercase">
+          © 2026 • DESIGNED WITH ETERNAL LOVE <span className="text-[#c5a059] px-0.5">♥</span> DEVOTION
+        </p>
+
+        {/* Creative Designer Tag with Contact Info */}
+        <div className="bg-[#fcfaf7] border border-[#c5a059]/40 px-6 py-5 rounded-2xl shadow-sm flex flex-col items-center justify-center gap-3 w-full max-w-sm mt-2">
+          
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-sans text-[#735322]">
+            <span>Designed by</span>
+            <a 
+              href="https://zentry-hub.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-cinzel font-black text-[#6e223c] text-[12px] sm:text-[13px] tracking-widest px-1 underline decoration-[#c5a059] decoration-2 underline-offset-4 hover:text-[#c5a059] transition-colors flex items-center gap-1.5"
+            >
+              Zentry Hub <span className="text-[10px]">↗</span>
+            </a>
+          </div>
+
+          <div className="w-12 h-[1px] bg-[#c5a059]/40 my-1" />
+          
+          <div className="flex flex-col items-center gap-2 text-[9px] sm:text-[10px] uppercase tracking-widest font-sans text-[#8a6628] font-semibold w-full">
+            <span className="opacity-80">For your own custom orders:</span>
+            
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5 mt-1 w-full justify-center">
+              <a href="tel:+917904431650" className="hover:text-[#6e223c] transition-colors flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-md shadow-xs border border-[#decba8]/30">
+                📞 7904431650
+              </a>
+              
+              <a href="mailto:zentryhub.official@gmail.com" className="hover:text-[#6e223c] transition-colors flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-md shadow-xs border border-[#decba8]/30 lowercase tracking-wider">
+                ✉️ zentryhub.official@gmail.com
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </footer>
   );
 }
