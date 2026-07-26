@@ -24,7 +24,7 @@ export default function App() {
       <div className="mobile-app-shell relative z-10 flex flex-col justify-between">
         <RomanticBackground />
 
-        <main className="flex flex-col gap-8 sm:gap-14 pb-10 relative z-10">
+        <main className="flex flex-col gap-4 sm:gap-6 pb-10 relative z-10">
           <Hero onExplore={scrollToReveal} />
 
           <div id="story">

@@ -4,10 +4,8 @@ import { motion } from "framer-motion";
 export default function RomanticFooter() {
   return (
     <footer className="w-full max-w-xl mx-auto px-5 pt-14 pb-20 flex flex-col items-center text-center relative z-10 border-t border-[#c5a059]/40">
-      <div className="w-14 h-14 rounded-full bg-gradient-to-b from-[#ffffff] to-[#f9f5ed] border-[1.5px] border-[#c5a059] flex items-center justify-center mb-6 shadow-sm">
-        <span className="font-cinzel text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5c4018] via-[#a8823b] to-[#5c4018]">
-          V&amp;T
-        </span>
+      <div className="w-24 h-24 flex items-center justify-center mb-6">
+        <img src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
       </div>
 
       <p className="font-cinzel text-xs font-bold tracking-[0.35em] text-[#735322] uppercase mb-4">
@@ -27,7 +25,7 @@ export default function RomanticFooter() {
           WITH THE WARMEST BLESSINGS OF
         </p>
         <p className="font-serif text-3xl sm:text-4xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#2b111c] via-[#6e223c] to-[#2b111c] tracking-tight">
-          Venkat &amp; Tharani
+          Vengat &amp; Tharani
         </p>
         <div className="w-20 h-[1.5px] bg-gradient-to-r from-transparent via-[#c5a059] to-transparent mx-auto my-3 opacity-80" />
         <p className="font-cinzel text-xs font-bold text-[#5c4018] tracking-[0.25em] uppercase">

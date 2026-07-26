@@ -108,7 +108,7 @@ export default function ScratchReveal({ onExplore }) {
   }, [isRevealed]);
 
   return (
-    <section className="w-full max-w-xl mx-auto px-5 py-16 flex flex-col items-center relative z-10">
+    <section className="w-full max-w-xl mx-auto px-5 py-6 flex flex-col items-center relative z-10">
       <div className="text-center mb-8">
         <div className="flex items-center justify-center gap-3 mb-3">
           <div className="w-8 h-[1.5px] bg-[#c5a059]" />
@@ -134,8 +134,8 @@ export default function ScratchReveal({ onExplore }) {
 
         {/* Revealed Content Inside */}
         <div className="flex flex-col items-center justify-center gap-4 max-w-sm relative z-10 py-4">
-          <div className="w-14 h-14 rounded-full bg-[#f9f5ed] border-[1.5px] border-[#c5a059] flex items-center justify-center shadow-xs">
-            <span className="font-cinzel text-base font-bold text-[#8a6628]">V&amp;T</span>
+          <div className="w-20 h-20 flex items-center justify-center">
+            <img src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
 
           <h3 className="font-serif text-2xl sm:text-3xl font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#2b111c] via-[#6e223c] to-[#2b111c]">
@@ -144,14 +144,17 @@ export default function ScratchReveal({ onExplore }) {
           <p className="font-cinzel text-[11px] font-bold text-[#735322] tracking-[0.22em] uppercase">
             MUHURTHAM: 06:00 AM - 07:30 AM
           </p>
+          <p className="font-sans text-[10px] font-semibold text-[#5c4018] tracking-widest uppercase mt-1">
+            Arulmigu Subramaniyaswamy Temple
+          </p>
 
-          <div className="w-28 h-[1.5px] bg-gradient-to-r from-transparent via-[#c5a059] to-transparent my-1" />
+          <div className="w-28 h-[1.5px] bg-gradient-to-r from-transparent via-[#c5a059] to-transparent my-2" />
 
           <p className="font-serif text-base sm:text-lg text-[#1c1917] font-normal">
-            Engagement: August 30, 2026 • Sunday
+            Engagement: August 30, 2026
           </p>
-          <p className="font-sans text-xs font-semibold text-[#5c4018] tracking-widest uppercase">
-            SANCTUARY • THIRUPARANKUNDRAM, MADURAI
+          <p className="font-sans text-[10px] font-semibold text-[#5c4018] tracking-widest uppercase mt-1">
+            Lakshmi Mahal • Madurai
           </p>
         </div>
 

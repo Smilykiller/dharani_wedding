@@ -170,12 +170,9 @@ export default function Hero({ onExplore }) {
           <motion.div
             style={{ transform: "translateZ(40px)" }}
             whileHover={{ scale: 1.08 }}
-            className="w-16 h-16 rounded-full bg-gradient-to-b from-[#ffffff] to-[#f9f5ed] border-[1.5px] border-[#c5a059] flex items-center justify-center mb-6 shadow-md relative z-10"
+            className="w-24 h-24 flex items-center justify-center mb-6 relative z-10"
           >
-            <div className="absolute inset-1.5 rounded-full border-[0.5px] border-[#decba8]" />
-            <span className="font-cinzel text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5c4018] via-[#a8823b] to-[#5c4018] tracking-wider select-none">
-              V&amp;T
-            </span>
+            <img src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
           </motion.div>
 
           {/* GROOM NAME */}
@@ -184,7 +181,7 @@ export default function Hero({ onExplore }) {
               THE GROOM
             </span>
             <h1 className="font-cinzel text-3xl sm:text-5xl font-bold tracking-[0.15em] text-transparent bg-clip-text bg-gradient-to-r from-[#1c1917] via-[#5c4018] to-[#1c1917] drop-shadow-sm select-none animate-gold-shimmer pb-2 whitespace-nowrap">
-              G. VENKAT
+              G. VENGAT
             </h1>
           </motion.div>
 

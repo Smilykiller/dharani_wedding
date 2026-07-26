@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function OurStory() {
   return (
-    <section className="w-full max-w-xl mx-auto px-5 py-16 flex flex-col items-center relative z-10">
+    <section className="w-full max-w-xl mx-auto px-5 py-6 flex flex-col items-center relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,10 +17,8 @@ export default function OurStory() {
         <div className="absolute bottom-0 left-0 w-44 h-44 bg-gradient-to-tr from-[#4a1525]/15 to-transparent rounded-full blur-3xl pointer-events-none" />
 
         {/* Top Decorative Crest */}
-        <div className="w-16 h-16 rounded-full bg-[#f9f5ed] border-[1.5px] border-[#c5a059] flex items-center justify-center mb-6 shadow-sm relative z-10 group-hover:scale-108 transition-transform">
-          <span className="font-cinzel text-base font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#5c4018] via-[#a8823b] to-[#5c4018]">
-            V&amp;T
-          </span>
+        <div className="w-24 h-24 flex items-center justify-center mb-6 relative z-10 group-hover:scale-108 transition-transform">
+          <img src="/images/logo.png" alt="Logo" className="w-full h-full object-contain" />
         </div>
 
         <span className="font-cinzel text-xs font-bold tracking-[0.4em] text-[#735322] uppercase mb-2 relative z-10">
@@ -43,7 +41,7 @@ export default function OurStory() {
             WITH DIVINE BLESSINGS &amp; LOVE
           </p>
           <p className="font-serif text-3xl sm:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#2b111c] via-[#6e223c] to-[#2b111c] font-normal italic tracking-wide">
-            Venkat &amp; Tharani
+            Vengat &amp; Tharani
           </p>
           <span className="font-cinzel text-[10px] text-[#8a6628] tracking-[0.2em] uppercase mt-1.5">
             &amp; Both Our Beloved Families

@@ -10,12 +10,12 @@ export default function EventSchedule() {
       title: "ENGAGEMENT CEREMONY",
       date: "AUGUST 30, 2026",
       day: "SUNDAY",
-      time: "10:00 AM ONWARDS",
-      venue: "SANCTUARY AUDITORIUM",
+      time: "7:00 PM ONWARDS",
+      venue: "LAKSHMI MAHAL",
       location: "Thiruparankundram, Madurai",
+      mapLink: "https://maps.app.goo.gl/5LyxCatMhf9vV1PY9",
       description:
         "The sacred betrothal where two families unite in joy, exchanging rings and traditional blessings under the holy auspices of Lord Murugan.",
-      dressCode: "Traditional Silk & Royal Gold",
       highlights: ["Sacred Ring Exchange", "Traditional Mangala Isai", "Grand Festive Feast"],
     },
     wedding: {
@@ -24,19 +24,19 @@ export default function EventSchedule() {
       date: "AUGUST 31, 2026",
       day: "MONDAY",
       time: "06:00 AM - 07:30 AM (MUHURTHAM)",
-      venue: "SANCTUARY AUDITORIUM",
+      venue: "Arulmigu Subramaniyaswamy Temple",
       location: "Thiruparankundram, Madurai",
+      mapLink: "https://maps.app.goo.gl/QEvKGsprt5amZGBz7",
       description:
         "The divine tying of the Mangalyam during the auspicious morning Muhurtham, forever binding two souls in eternal love and companionship.",
-      dressCode: "Kanchipuram Silk & Haute Couture Traditional",
-      highlights: ["Divine Muhurtham & Mangalyam", "Sacred Agni Blessings", "Royal Wedding Reception"],
+      highlights: ["Mangalya Dharanam", "Divine Temple Blessings", "Celebratory Wedding Feast"],
     },
   };
 
   const current = eventsData[activeEvent];
 
   return (
-    <section className="w-full max-w-xl mx-auto px-5 py-16 flex flex-col items-center relative z-10">
+    <section className="w-full max-w-xl mx-auto px-5 py-6 flex flex-col items-center relative z-10">
       <motion.div
         initial={{ opacity: 0, y: 25 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -128,17 +128,9 @@ export default function EventSchedule() {
               “{current.description}”
             </p>
 
-            {/* Dress Code & Highlights Box */}
+            {/* Ceremony Highlights Box */}
             <div className="w-full bg-[#fcfaf7] border-[1px] border-[#decba8] rounded-2xl p-5 mb-7 relative z-10 text-left flex flex-col gap-3 shadow-2xs">
-              <div className="flex items-center justify-between border-b border-[#decba8]/50 pb-2">
-                <span className="font-cinzel text-[10px] font-bold text-[#735322] tracking-[0.25em] uppercase">
-                  DRESS CODE
-                </span>
-                <span className="font-serif text-xs font-semibold text-[#2b111c] italic">
-                  {current.dressCode}
-                </span>
-              </div>
-              <div className="pt-1">
+              <div>
                 <span className="font-cinzel text-[10px] font-bold text-[#735322] tracking-[0.25em] uppercase block mb-2">
                   CEREMONY HIGHLIGHTS
                 </span>
@@ -154,12 +146,12 @@ export default function EventSchedule() {
 
             {/* Google Maps / Sanctuary Guidance Button */}
             <motion.a
-              href="https://maps.google.com/?q=Thiruparankundram,Madurai"
+              href={current.mapLink}
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.96 }}
-              className="px-8 py-3.5 bg-[#fdfbf7] border-[1.5px] border-[#c5a059] text-[#2b111c] rounded-full font-cinzel font-bold text-[11px] tracking-[0.25em] uppercase shadow-sm hover:bg-[#faf4ea] hover:shadow-md transition-all relative z-10"
+              className="px-8 py-3.5 bg-gradient-to-r from-[#2b111c] to-[#4a1525] border-[1.5px] border-[#c5a059] text-[#decba8] rounded-full font-cinzel font-bold text-[11px] tracking-[0.25em] uppercase shadow-md hover:shadow-lg hover:from-[#3f1d2b] hover:to-[#5e1c31] transition-all relative z-10"
             >
               🗺️ GET DIRECTIONS TO VENUE →
             </motion.a>

@@ -33,7 +33,7 @@ export default function RomanticCountdown() {
   ];
 
   return (
-    <section className="w-full max-w-xl mx-auto px-5 py-16 flex flex-col items-center text-center relative z-10">
+    <section className="w-full max-w-xl mx-auto px-5 py-6 flex flex-col items-center text-center relative z-10">
       <div className="flex items-center gap-3 mb-4">
         <div className="w-10 h-[1.5px] bg-gradient-to-r from-transparent to-[#c5a059]" />
         <span className="font-cinzel text-xs font-bold tracking-[0.38em] text-[#735322] uppercase bg-[#fdfbf7] border-[1px] border-[#c5a059]/80 px-6 py-1.5 rounded-full shadow-2xs">
