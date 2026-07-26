@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RomanticBackground from "./components/RomanticBackground";
+import Hero from "./components/Hero";
+import OurStory from "./components/OurStory";
+import ScratchReveal from "./components/ScratchReveal";
+import EventSchedule from "./components/EventSchedule";
+import RomanticCountdown from "./components/RomanticCountdown";
+import RomanticFooter from "./components/RomanticFooter";
 
-function App() {
+export default function App() {
+  const scrollToReveal = () => {
+    const datesEl = document.getElementById("reveal");
+    if (datesEl) {
+      datesEl.scrollIntoView({ behavior: "smooth" });
+    } else {
+      const storyEl = document.getElementById("story");
+      if (storyEl) storyEl.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-neutral-950 text-neutral-800 flex justify-center selection:bg-rose-200 selection:text-neutral-950 overflow-x-hidden relative">
+      {/* Mobile-first App Shell container (Centered on desktop, full-screen on mobile) */}
+      <div className="mobile-app-shell relative z-10 flex flex-col justify-between">
+        <RomanticBackground />
+
+        <main className="flex flex-col gap-8 sm:gap-14 pb-10 relative z-10">
+          <Hero onExplore={scrollToReveal} />
+
+          <div id="story">
+            <OurStory />
+          </div>
+
+          <div id="reveal">
+            <ScratchReveal />
+          </div>
+
+          <div id="schedule">
+            <EventSchedule />
+          </div>
+
+          <div id="countdown">
+            <RomanticCountdown />
+          </div>
+        </main>
+
+        <RomanticFooter />
+      </div>
     </div>
   );
 }
-
-export default App;
